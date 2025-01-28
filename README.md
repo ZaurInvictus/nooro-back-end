@@ -40,22 +40,25 @@ To initialize the project, follow these steps:
 
 7. Create a `.env` file and configure your environment variables as needed.
    
-# Prisma supports the native connection string format for PostgreSQL, MySQL, SQLite, SQL Server, MongoDB and CockroachDB.
-# See the documentation for all the connection string options: https://pris.ly/d/connection-strings
+Prisma supports the native connection string format for PostgreSQL, MySQL, SQLite, SQL Server, MongoDB, and CockroachDB. See the documentation for all the connection string options: [Prisma Connection Strings](https://pris.ly/d/connection-strings)
 
+### Database Environment Variable
 
-Database environmet variable:
-
+```plaintext
 DATABASE_URL="mysql://<username>:<password>@<host>:<port>/<database>"
+```
 
-Replace <username> with your MySQL username.
-Replace <password> with your MySQL password.
-Replace <host> with your MySQL server host (e.g., localhost).
-Replace <port> with the port number (default is 3306).
-Replace <database> with the name of your MySQL database.
+- Replace `<username>` with your MySQL username.
+- Replace `<password>` with your MySQL password.
+- Replace `<host>` with your MySQL server host (e.g., localhost).
+- Replace `<port>` with the port number (default is 3306).
+- Replace `<database>` with the name of your MySQL database.
 
-Example:
+**Example:**
+
+```plaintext
 DATABASE_URL="mysql://rootname:password@localhost:3306/yourdatabase"
+```
 
 
 8. Run tests
